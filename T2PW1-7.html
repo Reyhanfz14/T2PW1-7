@@ -1,0 +1,175 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T2PW1-7</title>
+  </head>
+  <body>
+    <h1>Absensi Mahasiswa Teknik Informatika</h1>
+    <table border="1">
+      <tr>
+        <td rowspan="3">NO</td>
+        <td rowspan="3">NPM</td>
+        <td rowspan="3">NAMA</td>
+        <td colspan="7">PERTEMUAN</td>
+      </tr>
+      <tr>
+        <td>9-Feb</td>
+        <td>16-Feb</td>
+        <td>23-Feb</td>
+        <td>2-Mar</td>
+        <td>9-Mar</td>
+        <td>16-Mar</td>
+        <td>23-mar</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1111111111</td>
+        <td>Nyiah Huston</td>
+        <td>v</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2222222222</td>
+        <td>Luan Olivera</td>
+        <td>v</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3333333333</td>
+        <td>Yuto Horigone</td>
+        <td>v</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <h1>Form Mahasiswa</h1>
+
+    <fieldset>
+      <legend>Data Mahasiswa</legend>
+      <div class="row">
+        <div class="col">
+          <div style="margin-bottom: 8px">
+            <label>Nama :</label><input type="text" id="nama" required />
+          </div>
+          <div style="margin-bottom: 8px">
+            <label>NPM :</label><input type="text" id="npm" required />
+          </div>
+          <div style="margin-bottom: 8px">
+            <label>Kelas :</label>
+            <select id="kelas">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select>
+          </div>
+          <div>
+            <label>Jenis Kelamin :</label>
+            <label
+              ><input type="radio" name="jk" value="Pria" checked /> Pria</label
+            >
+            <label
+              ><input type="radio" name="jk" value="Wanita" /> Wanita</label
+            >
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tempat Tinggal Mahasiswa</legend>
+      <div style="display: flex; gap: 12px">
+        <div style="margin-bottom: 8px; flex: 1">
+          <label>Alamat :</label><br />
+          <textarea id="alamat"></textarea>
+        </div>
+        <div style="width: 220px">
+          <div style="margin-bottom: 8px">
+            <label>Kecamatan :</label><input type="text" id="kecamatan" />
+          </div>
+          <div style="margin-bottom: 8px">
+            <label>Kabupaten/Kotamadya :</label
+            ><input type="text" id="kabupaten" />
+          </div>
+          <div style="margin-bottom: 8px">
+            <label>Provinsi :</label><input type="text" id="provinsi" />
+          </div>
+          <div><label>Kode Pos :</label><input type="text" id="kodepos" /></div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Lain-lainnya</legend>
+      <div style="margin-bottom: 8px">
+        <label>Bahasa Pemrograman :</label>
+        <label><input type="checkbox" name="lang" value="C/C++" /> C/C++</label>
+        <label><input type="checkbox" name="lang" value="Go" /> Go Lang</label>
+        <label
+          ><input type="checkbox" name="lang" value="Python" /> Python</label
+        >
+        <label><input type="checkbox" name="lang" value="PHP" /> PHP</label>
+        <label
+          ><input type="checkbox" name="lang" value="Javascript" />
+          Javascript</label
+        >
+        <label><input type="checkbox" name="lang" value="Ruby" /> Ruby</label>
+      </div>
+
+      <div>
+        <label>Kegiatan :</label>
+        <label
+          ><input type="checkbox" name="keg" value="Organisasi Kemahasiswaan" />
+          Organisasi Kemahasiswaan</label
+        >
+        <label
+          ><input type="checkbox" name="keg" value="Bidang Olahraga" /> Bidang
+          Olahraga</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="keg"
+            value="Organisasi di Luar Kampus"
+          />
+          Organisasi di Luar Kampus</label
+        >
+        <label
+          ><input type="checkbox" name="keg" value="Bidang Seni" /> Bidang
+          Seni</label
+        >
+      </div>
+    </fieldset>
+
+    <div class="controls">
+      <button type="reset" class="btn">Reset</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </body>
+</html>
